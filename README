@@ -1,0 +1,22 @@
+# xfd-radiator
+
+`xfd-radiator` is a simple web-based build radiator. Currently is supports
+only the Hudson continuous integration server for its data but the plan is
+to support more.
+
+# Usage
+
+*dashboard.html* shows a simple example of the use of the radiator with the
+following contents in the body:
+ 	...
+ 	<script>
+  	var URI = 'http://localhost:8080/hudson/view/All'
+  	updatePage();
+  	setInterval( "updatePage()", 3000 );
+ 	</script>
+ 	...
+
+change the URI to the hudson view that you wish to display and alter the update
+interval based upon preference.
+
+
